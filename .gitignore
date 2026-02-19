@@ -1,0 +1,5 @@
+.DS_Store
+soundtrack/
+*.mp3
+node_modules/
+.env
