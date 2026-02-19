@@ -2,14 +2,14 @@
     var blocks = document.querySelectorAll('.photo-block');
     var BASE_HEIGHT = 40;
     var BASE_TS_SIZE = 20;
-    var BASE_POEM_SIZE = 14;
+    var BASE_POEM_SIZE = 18;
 
     function getScrollProgress(el, isLast) {
         if (isLast) return 1;
         var rect = el.getBoundingClientRect();
         var windowH = window.innerHeight;
-        var start = windowH * 0.3;
-        var end = -rect.height * 0.3;
+        var start = 0;
+        var end = -rect.height;
         var raw = (start - rect.top) / (start - end);
         return Math.min(1, Math.max(0, raw));
     }
