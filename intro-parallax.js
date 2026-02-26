@@ -4,7 +4,7 @@
 
 
 
-    var speed = 0.5;
+    var speed = 0.6;
 
 
 
@@ -90,13 +90,13 @@
 
             var img2Top = getTopInSection(img2);
 
-            baseTops[1] = img2Top + (img2.offsetHeight / 2) - (titleH / 2) - 120;
+            baseTops[1] = img2Top + (img2.offsetHeight / 2) - (titleH / 2) + 120;
 
 
 
             var img3Top = getTopInSection(img3);
 
-            baseTops[2] = img3Top - titleH + 70;
+            baseTops[2] = img3Top - titleH + 310;
 
         }
 
@@ -124,7 +124,7 @@
 
                 var lag = scrollSinceVisible * (1 - speed);
 
-                titles[i].style.top = (baseTops[i] + lag) + 'px';
+                titles[i].style.top = (baseTops[i] - lag) + 'px';
 
             }
 
