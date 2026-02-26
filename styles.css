@@ -10,6 +10,7 @@
 body {
     margin: 0;
     padding: 3.75rem;
+    background-color: white;
 }
 
 h1 {
@@ -69,4 +70,144 @@ nav a.active {
     font-size: 20px;
     opacity: 0;
     white-space: nowrap;
+}
+
+#intro {
+    position: relative;
+}
+
+.intro-section-title {
+    font-family: 'Granke', sans-serif;
+    font-size: 128px;
+    font-weight: 550;
+    letter-spacing: 0.01em;
+    margin: 0;
+    mix-blend-mode: difference;
+    color: white;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.intro-body {
+    font-family: 'Futura', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.intro-ts {
+    font-family: 'Futura', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.intro-block-1 {
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.intro-img-1 {
+    display: block;
+    width: 45%;
+}
+
+.intro-title-1 {
+    top: 0;
+    left: 35%;
+}
+
+.intro-text-row-1 {
+    display: flex;
+    align-items: flex-end;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.intro-text-row-1 .intro-body {
+    flex: 0 0 45%;
+}
+
+.intro-text-row-1 .intro-ts {
+    flex: 1;
+    text-align: right;
+}
+
+.intro-text-row-2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.intro-text-row-2 .intro-body {
+    width: 45%;
+    text-align: left;
+}
+
+.intro-block-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    position: relative;
+}
+
+.intro-img-2 {
+    display: block;
+    width: 45%;
+    flex-shrink: 0;
+}
+
+.intro-block-2-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.intro-title-2 {
+    top: 0;
+    left: 50%;
+}
+
+.intro-ts-2 {
+    text-align: right;
+    display: block;
+}
+
+.intro-text-row-3 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 37%;
+    width: 58%;
+}
+
+.intro-text-row-3 .intro-body {
+    width: 100%;
+}
+
+.intro-block-3 {
+    position: relative;
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+}
+
+.intro-title-3 {
+    top: 0;
+    left: 17.5%;
+}
+
+.intro-img-3 {
+    display: block;
+    width: 58%;
+    position: relative;
+    z-index: 1;
 }
